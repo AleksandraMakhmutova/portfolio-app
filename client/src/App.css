@@ -317,8 +317,8 @@ section .title2::after{
 }
 .services .title2::after,
 .teams .title2::after{
-    background: #111;
-    content: "что предоставляю";
+    background: rgba(17, 17, 17, 0);
+    content: "";
 }
 
 
@@ -365,7 +365,7 @@ section .title2::after{
 }
 
 .skills .title2::before{
-	background: rgb(8, 8, 8);
+	background: rgba(8, 8, 8, 0);
 	width: 276px;
 }
 .skills .skills-content .column{
