@@ -13,7 +13,7 @@ const statusLang = useSelector(store=> store.translate)
                 <div className="cardservices">
                     <div className="box">
                         <i className="fas fa-laptop"></i>
-                        <div className="text">{statusLang ? `Web Developmen`: `Веб разработка`}</div>
+                        <div className="text">{statusLang ? `Web Development`: `Веб разработка`}</div>
                         <p>{statusLang ? `Development of a stable application with backend and frontend. Database setup.`:
 												 `Разработка стабильно работающего приложения с бэкендом и фронтендом. Настройка базы данных. `}</p>
                     </div>
