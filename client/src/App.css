@@ -677,7 +677,11 @@ section .title2::after{
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
-    }
+		}
+		.skills .skills-content .right .bars #css3{
+			width: 95px;
+			margin-left: 116px;
+		}
     .contact .right form .fields{
         flex-direction: column;
     }
