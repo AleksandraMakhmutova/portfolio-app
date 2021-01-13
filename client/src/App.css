@@ -365,7 +365,7 @@ section .title2::after{
 }
 
 .skills .title2::before{
-	background: rgba(8, 8, 8, 0);
+	background: rgb(8, 8, 8);
 	width: 276px;
 }
 .skills .skills-content .column{
