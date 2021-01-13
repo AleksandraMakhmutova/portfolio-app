@@ -361,7 +361,7 @@ section .title2::after{
     content: "what i know";
 }
 .skills .title2::after{
-	content: "которые использую";
+	content: "";
 }
 
 .skills .title2::before{
