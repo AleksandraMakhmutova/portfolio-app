@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aleksandramakhmutova.github.io/portfolio-app/",
+
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -24,14 +24,14 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "web-vitals": "^0.2.4"
-  },
-  "proxy": "http://localhost:3001/",
+	},
+	"proxy": "http://localhost:3001/",
   "scripts": {
     "start-client": "react-scripts start",
-    "build": "react-scripts build && (cd .. && npm install && node server.js)",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"start": "cd .. && npm run start",
+    "eject": "react-scripts eject",
+    "start": "cd .. && npm run start",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },

@@ -10,6 +10,7 @@ dotenv.config()
 const app = express();
 
 app.use(express.static(path.resolve('client/build/')))
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
@@ -87,16 +88,16 @@ app.post('/send_message',async (req, res) => {
   });
 
 //root необходимо опустить в самый конец файла чтоб не было конфликтов 
-// const root = path.join(process.env.PWD, 'client', 'build');
-// app.use(express.static(root));
-// app.get('*', (req, res) => {
-//   res.sendFile('index.html', { root });
-// });
-
-
+const root = path.join(process.env.PWD, 'client', 'build');
+app.use(express.static(root));
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('client/build/index.html'))
-})
+  res.sendFile('index.html', { root });
+});
+
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve('client/build/index.html'))
+// })
 const PORT = process.env.PORT || 8080
 app.listen(PORT, console.log(`server is work ${PORT}`));
 

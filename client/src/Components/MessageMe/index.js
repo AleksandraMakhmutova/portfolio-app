@@ -23,7 +23,7 @@ const [mesOk, setMesOk] = useState(null)
 	
 	async function handleSubmit(event) {
     event.preventDefault();
-    const res = await fetch(`${process.env.REACT_APP_URL}/send_message`, {
+    const res = await fetch('/send_message', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
