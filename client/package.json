@@ -28,7 +28,7 @@
   "proxy": "http://localhost:3001/",
   "scripts": {
     "start-client": "react-scripts start",
-    "build": "react-scripts build && (cd .. && npm install)",
+    "build": "react-scripts build && (cd .. && npm install && node server.js)",
     "test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"start": "cd .. && npm run start",
