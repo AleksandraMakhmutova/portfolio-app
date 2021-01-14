@@ -40,7 +40,7 @@ const [mesOk, setMesOk] = useState(null)
 				email: "",
 				message: "",
 			})
-			statusLang ? setMesOk("Message is send.") : setMesOk("Сообщение отправлено.")
+			statusLang ? setMesOk("Message was sent.") : setMesOk("Сообщение отправлено.")
     }
     else if (res.status === 406) {
 			statusLang ? setMesOk("Message isn't send,please try again."): setMesOk("Сообщение не отправлено, попробуйте ещё.") 
